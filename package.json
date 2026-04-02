@@ -4,7 +4,8 @@
   "description": "This repository contains a backend web application developed using Node.js and Express.js, designed to build scalable, maintainable, and efficient RESTful APIs. The project focuses on implementing clean architecture principles, modular code organization, and industry-standard backend development practices.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon httpModule.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Shimul-DIU/Node.js/issues"
   },
-  "homepage": "https://github.com/Shimul-DIU/Node.js#readme"
+  "homepage": "https://github.com/Shimul-DIU/Node.js#readme",
+  "dependencies": {
+    "nodemon": "^3.1.14",
+    "random-fruits-name": "^1.10.2"
+  }
 }
