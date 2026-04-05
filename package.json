@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon routing.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Shimul-DIU/Node.js#readme",
   "dependencies": {
+    "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "random-fruits-name": "^1.10.2"
   }
