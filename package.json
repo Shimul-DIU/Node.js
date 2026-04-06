@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/Shimul-DIU/Node.js#readme",
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "body-parser": "^2.2.2",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
-    "random-fruits-name": "^1.10.2"
+    "random-fruits-name": "^1.10.2",
+    "tailwindcss": "^4.2.2"
   }
 }
