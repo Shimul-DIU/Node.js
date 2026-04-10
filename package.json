@@ -22,6 +22,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
     "body-parser": "^2.2.2",
+    "dotenv": "^17.4.1",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "random-fruits-name": "^1.10.2",

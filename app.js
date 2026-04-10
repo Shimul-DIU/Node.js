@@ -1,11 +1,15 @@
 let express=require('express')
 let app=express()
 let path=require('path')
+
+
 let userRouter=require('./routes/user.routes')
 const bodyParser=require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use("/user",userRouter)
+
+
 
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,'./views/home.html'))
