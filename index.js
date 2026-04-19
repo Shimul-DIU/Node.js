@@ -1,7 +1,8 @@
 let {app,connectMongodb}=require('./app')
+let config=require('./config/config')
 
 require('dotenv').config() 
-let PORT= process.env.PORT || 3000
+let PORT=config.app.port || 3000
 
 app.listen(PORT,async()=>{
     await connectMongodb();
