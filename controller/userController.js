@@ -2,19 +2,16 @@ let { v4: uuidv4 } = require('uuid')
 let users=require('../models/userModels')
 let path=require('path')
 let getUsers=(req,res)=>{
-    res.sendFile(path.join(__dirname,'../views/users.html'))
+    res.sendFile(path.join(__dirname,'../views/register.html'))
 }
 
 let createUser=async (req,res)=>{
     try {
-    let {name,age,birthday,location,phone}=req.body;
+    let {firstName,lastName,fatherName,motherName,age,dob,divition,gender,}=req.body;
        let newUser=new users({
         id:uuidv4(),
-        name:name,
-        age:Number(age),
-        birthday:birthday,
-        location:location,
-        phone:Number(phone)
+        firstName,
+        lastName,fatherName,motherName,age,dob,divition,gender
     });
     await newUser.save();
     res.status(201).json(newUser);

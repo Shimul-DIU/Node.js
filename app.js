@@ -1,13 +1,12 @@
 let express=require('express')
 let path=require('path')
-
 const userRouter = require('./routes/userRoutes.js')
 const connectMongodb = require('./config/db.js')
 let app=express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 // Mount user routes
-app.use('/users', userRouter)
+app.use('/user', userRouter)
 
 // Home page route
 app.get('/',(req,res)=>{

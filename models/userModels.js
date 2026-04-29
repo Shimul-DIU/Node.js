@@ -1,10 +1,19 @@
 let mongoose=require('mongoose')
 let userSchema=mongoose.Schema({
-    id:{
-        type:String,
-        unique:true
+
+    firstName:{
+        type: String,
+        required: true
     },
-    name:{
+    lastName:{
+        type: String,
+        required: true
+    },
+    fatherName:{
+        type: String,
+        required: true
+    },
+    motherName:{
         type: String,
         required: true
     },
@@ -12,16 +21,15 @@ let userSchema=mongoose.Schema({
         type:Number,
         required:true
     },
-    birthday:{
+    dob:{
         type:Date,
         required:true
     },
-    location:{
+    divition:{
         type:String
     },
-    phone:{
-        type:Number,
-        required:true,
+    gender:{
+        type:String 
     }
 })
 

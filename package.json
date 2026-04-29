@@ -26,6 +26,7 @@
     "express": "^5.2.1",
     "mongodb": "^7.2.0",
     "mongoose": "^9.4.1",
+    "multer": "^2.1.1",
     "nodemon": "^3.1.14",
     "random-fruits-name": "^1.10.2",
     "tailwindcss": "^4.2.2",
