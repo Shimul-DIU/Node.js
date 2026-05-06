@@ -2,6 +2,7 @@ let {body,validationResult}=require('express-validator')
 let validatorRules=[
   body('firstName')
   .notEmpty()
+  .bail()
   .escape()
   .withMessage('First name is required')
   .isLength({min:2})
@@ -10,12 +11,14 @@ let validatorRules=[
 
   body('lastName')
   .notEmpty()
+  .bail()
   .escape()
   .withMessage('Last name is required')
   .isLength({min:2})
   .withMessage('Last name must be at least 2 characters long'),
 
   body('email')
+  .bail()
   .notEmpty()
   .withMessage('Email is required')
   .isEmail()
@@ -55,5 +58,5 @@ let validatorRules=[
   .withMessage('Gender is required')
   .isIn(['Male',' Female','Other'])
   .withMessage('Invalid gender'),
-  
+
 ]
